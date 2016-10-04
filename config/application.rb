@@ -29,7 +29,7 @@ module SilliLibs
 
     # Auto-load bots and its subdirectories
     config.paths.add File.join('app', 'bots'), glob: File.join('**', '*.rb')
-    config.autoload_paths += Dir[Rails.root.join('app', 'bots', '*')]
+    config.autoload_paths += Dir[Rails.root.join('app', 'bots', 'requests', '*')]
 
   end
 end
